@@ -94,7 +94,7 @@ class _OrderState extends State<Order> {
                           ClipRRect(
                               borderRadius: BorderRadius.circular(60),
                               child: Image.asset(
-                                "images/salad2.png",
+                                "images/bandengProduct.png",
                                 height: 90,
                                 width: 90,
                                 fit: BoxFit.cover,
@@ -105,11 +105,11 @@ class _OrderState extends State<Order> {
                           Column(
                             children: [
                               Text(
-                                "Salad",
+                                "Bandeng Presto",
                                 style: AppWidget.semiBoldtTextFieldStyle(),
                               ),
                               Text(
-                                "\$40",
+                                "\$Rp. 50.000",
                                 style: AppWidget.semiBoldtTextFieldStyle(),
                               )
                             ],

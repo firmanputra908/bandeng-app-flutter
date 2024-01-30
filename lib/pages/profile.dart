@@ -40,7 +40,7 @@ class _ProfileState extends State<Profile> {
   //     var downloadUrl = await (await task).ref.getDownloadURL();
   //     await SharedPreferenceHelper().saveUserProfile(downloadUrl);
   //     setState(() {
-        
+
   //     });
   //   }
   // }
@@ -72,7 +72,6 @@ class _ProfileState extends State<Profile> {
           children: [
             Stack(
               children: [
-                
                 Center(
                   child: Container(
                     margin: EdgeInsets.only(
@@ -81,24 +80,29 @@ class _ProfileState extends State<Profile> {
                       elevation: 10.0,
                       borderRadius: BorderRadius.circular(60),
                       child: ClipRRect(
-                        borderRadius: BorderRadius.circular(60),
-                        // child: selectedImage==null?  GestureDetector(
-                        child: GestureDetector(
-                          onTap: (){
-                            // getImage();
-                          },
-                          child: Image.asset("images/boy.jpg", height: 120, width: 120, fit: BoxFit.cover,) 
-                          // :Image.network(
-                          // profile!,
-                          //   height: 120,
-                          //   width: 120,
-                          //   fit: BoxFit.cover,
-                          // ),
-                        )
-                        // : Image.file(selectedImage!,  height: 120,
-                        //     width: 120,
-                        //     fit: BoxFit.cover,),
-                      ),
+                          borderRadius: BorderRadius.circular(60),
+                          // child: selectedImage==null?  GestureDetector(
+                          child: GestureDetector(
+                              onTap: () {
+                                // getImage();
+                              },
+                              child: Image.asset(
+                                "images/profilePhoto.png",
+                                height: 120,
+                                width: 120,
+                                fit: BoxFit.cover,
+                              )
+                              // :Image.network(
+                              // profile!,
+                              //   height: 120,
+                              //   width: 120,
+                              //   fit: BoxFit.cover,
+                              // ),
+                              )
+                          // : Image.file(selectedImage!,  height: 120,
+                          //     width: 120,
+                          //     fit: BoxFit.cover,),
+                          ),
                     ),
                   ),
                 ),
@@ -140,9 +144,8 @@ class _ProfileState extends State<Profile> {
                                 fontWeight: FontWeight.w600),
                           ),
                           Text(
-                            // name!,
-                            "Firmansyah"
-                          )
+                              // name!,
+                              "Firmansyah")
                         ],
                       )
                     ],
@@ -186,9 +189,8 @@ class _ProfileState extends State<Profile> {
                                 fontWeight: FontWeight.w600),
                           ),
                           Text(
-                          //  email!,
-                          "firmanputra909@gmail.com"
-                          )
+                              //  email!,
+                              "firmanputra909@gmail.com")
                         ],
                       )
                     ],
@@ -242,7 +244,7 @@ class _ProfileState extends State<Profile> {
               height: 10.0,
             ),
             GestureDetector(
-              onTap: (){
+              onTap: () {
                 AuthMethods().deleteuser();
               },
               child: Container(
@@ -289,7 +291,7 @@ class _ProfileState extends State<Profile> {
               height: 10.0,
             ),
             GestureDetector(
-              onTap: (){
+              onTap: () {
                 AuthMethods().SignOut();
               },
               child: Container(

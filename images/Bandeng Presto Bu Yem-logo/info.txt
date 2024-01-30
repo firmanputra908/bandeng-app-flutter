@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: SedgwickAve-Regular
+font link: https://fonts.google.com/specimen/Sedgwick+Ave
+font author: Kevin Burke
+font author site: http://www.blastframe.com/
+
+
+icon designer: Andrew Heins
+icon designer link: /andrewheins
+        
+{"bg":"#48B68D","icon":"#294F58","font":"#294F58","slogan":"#3d636c"}
+      

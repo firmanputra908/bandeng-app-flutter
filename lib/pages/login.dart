@@ -15,7 +15,7 @@ class LogIn extends StatefulWidget {
 class _LogInState extends State<LogIn> {
   String email = "", password = "";
 
-  final _formkey= GlobalKey<FormState>();
+  final _formkey = GlobalKey<FormState>();
 
   TextEditingController useremailcontroller = new TextEditingController();
   TextEditingController userpasswordcontroller = new TextEditingController();
@@ -24,7 +24,8 @@ class _LogInState extends State<LogIn> {
     try {
       await FirebaseAuth.instance
           .signInWithEmailAndPassword(email: email, password: password);
-          Navigator.push(context, MaterialPageRoute(builder: (context)=> BottomNav()));
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => BottomNav()));
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
@@ -32,8 +33,8 @@ class _LogInState extends State<LogIn> {
           "No User Found for that Email",
           style: TextStyle(fontSize: 18.0, color: Colors.black),
         )));
-      }else if(e.code=='wrong-password'){
-         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      } else if (e.code == 'wrong-password') {
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
             content: Text(
           "Wrong Password Provided by User",
           style: TextStyle(fontSize: 18.0, color: Colors.black),
@@ -78,7 +79,7 @@ class _LogInState extends State<LogIn> {
                 children: [
                   Center(
                       child: Image.asset(
-                    "images/logo.png",
+                    "images/bandeng1.png",
                     width: MediaQuery.of(context).size.width / 1.5,
                     fit: BoxFit.cover,
                   )),
@@ -111,24 +112,25 @@ class _LogInState extends State<LogIn> {
                             ),
                             TextFormField(
                               controller: useremailcontroller,
-                              validator: (value){
-                                if(value==null|| value.isEmpty){
+                              validator: (value) {
+                                if (value == null || value.isEmpty) {
                                   return 'Please Enter Email';
                                 }
                                 return null;
                               },
                               decoration: InputDecoration(
                                   hintText: 'Email',
-                                  hintStyle: AppWidget.semiBoldtTextFieldStyle(),
+                                  hintStyle:
+                                      AppWidget.semiBoldtTextFieldStyle(),
                                   prefixIcon: const Icon(Icons.email_outlined)),
                             ),
                             const SizedBox(
                               height: 30.0,
                             ),
                             TextFormField(
-                               controller:userpasswordcontroller,
-                              validator: (value){
-                                if(value==null|| value.isEmpty){
+                              controller: userpasswordcontroller,
+                              validator: (value) {
+                                if (value == null || value.isEmpty) {
                                   return 'Please Enter Password';
                                 }
                                 return null;
@@ -136,7 +138,8 @@ class _LogInState extends State<LogIn> {
                               obscureText: true,
                               decoration: InputDecoration(
                                   hintText: 'Password',
-                                  hintStyle: AppWidget.semiBoldtTextFieldStyle(),
+                                  hintStyle:
+                                      AppWidget.semiBoldtTextFieldStyle(),
                                   prefixIcon: Icon(Icons.password_outlined)),
                             ),
                             const SizedBox(
@@ -157,11 +160,11 @@ class _LogInState extends State<LogIn> {
                               height: 10.0,
                             ),
                             GestureDetector(
-                              onTap: (){
-                                if(_formkey.currentState!.validate()){
+                              onTap: () {
+                                if (_formkey.currentState!.validate()) {
                                   setState(() {
-                                    email= useremailcontroller.text;
-                                    password= userpasswordcontroller.text;
+                                    email = useremailcontroller.text;
+                                    password = userpasswordcontroller.text;
                                   });
                                 }
                                 userLogin();
@@ -170,7 +173,8 @@ class _LogInState extends State<LogIn> {
                                 elevation: 5.0,
                                 borderRadius: BorderRadius.circular(20),
                                 child: Container(
-                                  padding: const EdgeInsets.symmetric(vertical: 8.0),
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 8.0),
                                   width: 200,
                                   decoration: BoxDecoration(
                                       color: Color(0xFF0B32F1),
