@@ -44,226 +44,310 @@ class _HomeState extends State<Home> {
             Text("Presto Bu Yem", style: AppWidget.headLineTextFieldStyle()),
             Text("Rasakan cita rasa autentik di tiap gigitan",
                 style: AppWidget.lightTextFieldStyle()),
-            const SizedBox(height: 10),
+            const SizedBox(height: 5),
             Container(
                 margin: const EdgeInsets.only(right: 20), child: showItem()),
-            const SizedBox(height: 10),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Details()));
-                    },
-                    child: Container(
-                      margin: const EdgeInsets.all(4),
+            const SizedBox(height: 5),
+            Expanded(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Details()));
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.all(4),
+                        child: Material(
+                          elevation: 5.0,
+                          borderRadius: BorderRadius.circular(20),
+                          child: Container(
+                            padding: const EdgeInsets.all(10),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Image.asset(
+                                  "images/bandengProduct.png",
+                                  height: 120,
+                                  width: 120,
+                                  fit: BoxFit.cover,
+                                ),
+                                Text("Bandeng Presto",
+                                    style: AppWidget.semiBoldtTextFieldStyle()
+                                        .copyWith(fontSize: 17)),
+                                const SizedBox(
+                                  height: 2,
+                                ),
+                                Text("ISI 2",
+                                    style: AppWidget.lightTextFieldStyle()
+                                        .copyWith(fontSize: 13)),
+                                const SizedBox(
+                                  height: 2,
+                                ),
+                                Text("\Rp. 25000",
+                                    style: AppWidget.semiBoldtTextFieldStyle()
+                                        .copyWith(fontSize: 15)),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 5),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Details()));
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.all(4),
+                        child: Material(
+                          elevation: 5.0,
+                          borderRadius: BorderRadius.circular(20),
+                          child: Container(
+                            padding: const EdgeInsets.all(10),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Image.asset(
+                                  "images/pepes.png",
+                                  height: 120,
+                                  width: 120,
+                                  fit: BoxFit.cover,
+                                ),
+                                Text("Pepes",
+                                    style: AppWidget.semiBoldtTextFieldStyle()
+                                        .copyWith(fontSize: 17)),
+                                const SizedBox(
+                                  height: 2,
+                                ),
+                                Text("ISI 1",
+                                    style: AppWidget.lightTextFieldStyle()
+                                        .copyWith(fontSize: 13)),
+                                const SizedBox(
+                                  height: 2,
+                                ),
+                                Text("\Rp. 25000",
+                                    style: AppWidget.semiBoldtTextFieldStyle()
+                                        .copyWith(fontSize: 15)),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 5),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Details()));
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.all(4),
+                        child: Material(
+                          elevation: 5.0,
+                          borderRadius: BorderRadius.circular(20),
+                          child: Container(
+                            padding: const EdgeInsets.all(10),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Image.asset(
+                                  "images/bandengProduct.png",
+                                  height: 120,
+                                  width: 120,
+                                  fit: BoxFit.cover,
+                                ),
+                                Text("Bandeng Presto",
+                                    style: AppWidget.semiBoldtTextFieldStyle()
+                                        .copyWith(fontSize: 17)),
+                                const SizedBox(
+                                  height: 2,
+                                ),
+                                Text("ISI 2",
+                                    style: AppWidget.lightTextFieldStyle()
+                                        .copyWith(fontSize: 13)),
+                                const SizedBox(
+                                  height: 2,
+                                ),
+                                Text("\Rp. 25000",
+                                    style: AppWidget.semiBoldtTextFieldStyle()
+                                        .copyWith(fontSize: 15)),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 5),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Details()));
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.all(4),
+                        child: Material(
+                          elevation: 5.0,
+                          borderRadius: BorderRadius.circular(20),
+                          child: Container(
+                            padding: const EdgeInsets.all(10),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Image.asset(
+                                  "images/pepes.png",
+                                  height: 120,
+                                  width: 120,
+                                  fit: BoxFit.cover,
+                                ),
+                                Text("Pepes",
+                                    style: AppWidget.semiBoldtTextFieldStyle()
+                                        .copyWith(fontSize: 17)),
+                                const SizedBox(
+                                  height: 2,
+                                ),
+                                Text("ISI 1",
+                                    style: AppWidget.lightTextFieldStyle()
+                                        .copyWith(fontSize: 13)),
+                                const SizedBox(
+                                  height: 2,
+                                ),
+                                Text("\Rp. 25000",
+                                    style: AppWidget.semiBoldtTextFieldStyle()
+                                        .copyWith(fontSize: 15)),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Expanded(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.vertical,
+                child: Column(
+                  children: [
+                    Container(
+                      margin: const EdgeInsets.only(right: 10, left: 10),
                       child: Material(
                         elevation: 5.0,
                         borderRadius: BorderRadius.circular(20),
                         child: Container(
-                          padding: const EdgeInsets.all(10),
-                          child: Column(
+                          padding: const EdgeInsets.all(5),
+                          child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Image.asset(
                                 "images/bandengProduct.png",
-                                height: 150,
-                                width: 150,
+                                height: 120,
+                                width: 120,
                                 fit: BoxFit.cover,
                               ),
-                              Text("Bandeng Presto",
-                                  style: AppWidget.semiBoldtTextFieldStyle()),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              Text("ISI 2",
-                                  style: AppWidget.lightTextFieldStyle()),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              Text("\Rp. 25000",
-                                  style: AppWidget.semiBoldtTextFieldStyle()),
+                              const SizedBox(width: 20.0),
+                              Column(
+                                children: [
+                                  Container(
+                                    width:
+                                        MediaQuery.of(context).size.width / 2,
+                                    child: Text(
+                                      "Bandeng Presto",
+                                      style:
+                                          AppWidget.semiBoldtTextFieldStyle(),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 5),
+                                  Container(
+                                    width:
+                                        MediaQuery.of(context).size.width / 2,
+                                    child: Text(
+                                      "Bandeng Presto Khas Semarang",
+                                      style: AppWidget.lightTextFieldStyle(),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 5),
+                                  Container(
+                                    width:
+                                        MediaQuery.of(context).size.width / 2,
+                                    child: Text(
+                                      "\$Rp. 25000",
+                                      style:
+                                          AppWidget.semiBoldtTextFieldStyle(),
+                                    ),
+                                  )
+                                ],
+                              )
                             ],
                           ),
                         ),
                       ),
                     ),
-                  ),
-                  const SizedBox(height: 15),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Details()));
-                    },
-                    child: Container(
-                      margin: const EdgeInsets.all(4),
-                      child: Material(
-                        elevation: 5.0,
-                        borderRadius: BorderRadius.circular(20),
-                        child: Container(
-                          padding: const EdgeInsets.all(10),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Image.asset(
-                                "images/Pepes.png",
-                                height: 150,
-                                width: 150,
-                                fit: BoxFit.cover,
-                              ),
-                              Text("Pepes Bandeng Presto",
-                                  style: AppWidget.semiBoldtTextFieldStyle()),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              Text("ISI 1",
-                                  style: AppWidget.lightTextFieldStyle()),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              Text("\Rp. 15000",
-                                  style: AppWidget.semiBoldtTextFieldStyle()),
-                            ],
-                          ),
-                        ),
-                      ),
+                    SizedBox(
+                      height: 10,
                     ),
-                  ),
-                  const SizedBox(height: 15),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Details()));
-                    },
-                    child: Container(
-                      margin: const EdgeInsets.all(4),
+                    Container(
+                      margin: const EdgeInsets.only(right: 10, left: 10),
                       child: Material(
                         elevation: 5.0,
                         borderRadius: BorderRadius.circular(20),
                         child: Container(
-                          padding: const EdgeInsets.all(10),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Image.asset(
-                                "images/bandengProduct.png",
-                                height: 150,
-                                width: 150,
-                                fit: BoxFit.cover,
-                              ),
-                              Text("Bandeng Presto",
-                                  style: AppWidget.semiBoldtTextFieldStyle()),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              Text("ISI 2",
-                                  style: AppWidget.lightTextFieldStyle()),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              Text("\$Rp. 25000",
-                                  style: AppWidget.semiBoldtTextFieldStyle()),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 15),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Details()));
-                    },
-                    child: Container(
-                      margin: const EdgeInsets.all(4),
-                      child: Material(
-                        elevation: 5.0,
-                        borderRadius: BorderRadius.circular(20),
-                        child: Container(
-                          padding: const EdgeInsets.all(10),
-                          child: Column(
+                          padding: const EdgeInsets.all(5),
+                          child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Image.asset(
                                 "images/pepes.png",
-                                height: 150,
-                                width: 150,
+                                height: 120,
+                                width: 120,
                                 fit: BoxFit.cover,
                               ),
-                              Text("Pepes Bandeng Presto",
-                                  style: AppWidget.semiBoldtTextFieldStyle()),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              Text("ISI 1",
-                                  style: AppWidget.lightTextFieldStyle()),
-                              const SizedBox(
-                                height: 5,
-                              ),
-                              Text("\$Rp. 15000",
-                                  style: AppWidget.semiBoldtTextFieldStyle()),
+                              const SizedBox(width: 20.0),
+                              Column(
+                                children: [
+                                  Container(
+                                    width:
+                                        MediaQuery.of(context).size.width / 2,
+                                    child: Text(
+                                      "Pepes Bandeng",
+                                      style:
+                                          AppWidget.semiBoldtTextFieldStyle(),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 5),
+                                  Container(
+                                    width:
+                                        MediaQuery.of(context).size.width / 2,
+                                    child: Text(
+                                      "Pepes Bandeng Khas Semarang",
+                                      style: AppWidget.lightTextFieldStyle(),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 5),
+                                  Container(
+                                    width:
+                                        MediaQuery.of(context).size.width / 2,
+                                    child: Text(
+                                      "\$Rp. 25000",
+                                      style:
+                                          AppWidget.semiBoldtTextFieldStyle(),
+                                    ),
+                                  )
+                                ],
+                              )
                             ],
                           ),
                         ),
                       ),
                     ),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 15),
-            Container(
-              margin: const EdgeInsets.only(right: 10, left: 10),
-              child: Material(
-                elevation: 5.0,
-                borderRadius: BorderRadius.circular(20),
-                child: Container(
-                  padding: const EdgeInsets.all(5),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Image.asset(
-                        "images/bandengProduct.png",
-                        height: 120,
-                        width: 120,
-                        fit: BoxFit.cover,
-                      ),
-                      const SizedBox(width: 20.0),
-                      Column(
-                        children: [
-                          Container(
-                            width: MediaQuery.of(context).size.width / 2,
-                            child: Text(
-                              "Bandeng Presto",
-                              style: AppWidget.semiBoldtTextFieldStyle(),
-                            ),
-                          ),
-                          const SizedBox(height: 5),
-                          Container(
-                            width: MediaQuery.of(context).size.width / 2,
-                            child: Text(
-                              "Bandeng Presto Khas Semarang",
-                              style: AppWidget.lightTextFieldStyle(),
-                            ),
-                          ),
-                          const SizedBox(height: 5),
-                          Container(
-                            width: MediaQuery.of(context).size.width / 2,
-                            child: Text(
-                              "\$Rp. 25000",
-                              style: AppWidget.semiBoldtTextFieldStyle(),
-                            ),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
+                  ],
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
@@ -287,15 +371,15 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(10),
             child: Container(
               decoration: BoxDecoration(
-                  color: icecream ? Colors.black : Colors.white,
+                  // color: icecream ? Colors.black : Colors.white,
                   borderRadius: BorderRadius.circular(8)),
               padding: const EdgeInsets.all(8),
               child: Image.asset(
-                "images/ice-cream.png",
+                "images/bandengIcon.png",
                 height: 40,
                 width: 40,
                 fit: BoxFit.cover,
-                color: icecream ? Colors.white : Colors.black,
+                // color: icecream ? Colors.white : Colors.black,
               ),
             ),
           ),
@@ -313,15 +397,15 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(10),
             child: Container(
               decoration: BoxDecoration(
-                  color: pizza ? Colors.black : Colors.white,
+                  // color: pizza ? Colors.black : Colors.white,
                   borderRadius: BorderRadius.circular(8)),
               padding: const EdgeInsets.all(8),
               child: Image.asset(
-                "images/pizza.png",
+                "images/pepesIcon.png",
                 height: 40,
                 width: 40,
                 fit: BoxFit.cover,
-                color: pizza ? Colors.white : Colors.black,
+                // color: pizza ? Colors.white : Colors.black,
               ),
             ),
           ),
@@ -339,15 +423,15 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(10),
             child: Container(
               decoration: BoxDecoration(
-                  color: salad ? Colors.black : Colors.white,
+                  // color: salad ? Colors.black : Colors.white,
                   borderRadius: BorderRadius.circular(8)),
               padding: const EdgeInsets.all(8),
               child: Image.asset(
-                "images/salad.png",
+                "images/bandengIcon.png",
                 height: 40,
                 width: 40,
                 fit: BoxFit.cover,
-                color: salad ? Colors.white : Colors.black,
+                // color: salad ? Colors.white : Colors.black,
               ),
             ),
           ),
@@ -365,15 +449,15 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(10),
             child: Container(
               decoration: BoxDecoration(
-                  color: burger ? Colors.black : Colors.white,
+                  // color: burger ? Colors.black : Colors.white,
                   borderRadius: BorderRadius.circular(8)),
               padding: const EdgeInsets.all(8),
               child: Image.asset(
-                "images/burger.png",
+                "images/pepesIcon.png",
                 height: 40,
                 width: 40,
                 fit: BoxFit.cover,
-                color: burger ? Colors.white : Colors.black,
+                // color: burger ? Colors.white : Colors.black,
               ),
             ),
           ),
